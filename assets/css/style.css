@@ -1,0 +1,24 @@
+
+@import url(reset.css);
+@import url(typography.css);
+@import url(layout.css);
+@import url(header.css);
+
+
+
+
+
+
+
+/* * {border: 1px solid red;} */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/img/Wall.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
