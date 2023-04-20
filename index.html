@@ -1,202 +1,431 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <title>Apuntes de Clase Codeable</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Resumen {Codeable}</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html"><img src="ico/ico_config.png" alt="icono config" height="16px"> Config</a>
-            <ul>
-              <li><a href="index.html#comand">Comandos Básicos</a></li>
-              <li><a href="index.html#wsl">Install WSL</a></li>
-              <li><a href="index.html#winter">Install windows terminal y ohmyzsh</a></li>
-              <li><a href="index.html#ruby">Install Ruby</a></li>
-              <li><a href="index.html#node">Install NodeJS</a></li>
-              <li><a href="index.html#vsc">Install VSCode</a></li>
-              <li><a href="index.html#git">Install Git</a></li>
-              <li><a href="index.html#gh">Conociendo Github</a></li>
-            </ul>
-          </li>
-          <li><a href="ruby.html"><img src="ico/ico_ruby.png" alt="icono ruby" height="15px"> Ruby</a>
-            <ul>
-              <li><a href="#">Basic 1</a></li>
-              <li><a href="#">Basic 2</a></li>
-              <li><a href="#">item 3</a></li>
-              <li><a href="#">item 4</a></li>
-              <li><a href="#">item 5</a></li>
-              <li><a href="#">item 6</a></li>
-            </ul>
-          </li>
-          <li><a href="html_css.html"><img src="ico/ico_htss.png" alt="icono html" height="15px"> HTML & CSS</a>
-            <ul>
-              <li><a href="#">item 1</a></li>
-              <li><a href="#">item 2</a></li>
-              <li><a href="#">item 3</a></li>
-              <li><a href="#">item 4</a></li>
-              <li><a href="#">item 5</a></li>
-              <li><a href="#">item 6</a></li>
-            </ul>
-          </li>
-          <li><a href="rails.html"><img src="ico/ico_rails.png" alt="icono rails" height="15px"> Rails</a>
-            <ul>
-              <li><a href="#">item 1</a></li>
-              <li><a href="#">item 2</a></li>
-              <li><a href="#">item 3</a></li>
-              <li><a href="#">item 4</a></li>
-              <li><a href="#">item 5</a></li>
-              <li><a href="#">item 6</a></li>
-            </ul>
-          </li>
-          <li><a href="js.html"><img src="ico/ico_JS.png" alt="icono JS" height="15px"> JavaScript</a>
-            <ul>
-              <li><a href="#">item 1</a></li>
-              <li><a href="#">item 2</a></li>
-              <li><a href="#">item 3</a></li>
-              <li><a href="#">item 4</a></li>
-              <li><a href="#">item 5</a></li>
-              <li><a href="#">item 6</a></li>
-           </ul>
-          </li>
-          <li><a href="react.html"><img src="ico/ico_React.png" alt="icono react" height="15px"> React</a>
-            <ul>
-              <li><a href="#">item 1</a></li>
-              <li><a href="#">item 2</a></li>
-              <li><a href="#">item 3</a></li>
-              <li><a href="#">item 4</a></li>
-              <li><a href="#">item 5</a></li>
-              <li><a href="#">item 6</a></li>
-           </ul>
-          </li>
-          <li><a href="capstone.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-             Capstone</a>
-            <ul>
-              <li><a href="#">item 1</a></li>
-              <li><a href="#">item 2</a></li>
-              <li><a href="#">item 3</a></li>
-              <li><a href="#">item 4</a></li>
-              <li><a href="#">item 5</a></li>
-              <li><a href="#">item 6</a></li>
-           </ul>
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container1024">
+        <nav class="navbar">
+          <input type="checkbox" id="menu-mobile">
+            
+          <a href="#" class="navbar__logo text-decoration-none">
+            <span class="logo">Notes</span>
+  
+            <label for="menu-mobile" id="menu-close">
+              <i class="ri-close-fill ri-sm navbar__logo" style="font-size: 20px; color: white;"></i>
+            </label>
+  
+            <label for="menu-mobile" id="menu-open">
+              <i class="ri-menu-fill ri-sm navbar__logo" style="font-size: 20px; color: white;"></i>
+            </label>
+            
+          </a>
+          <ul class="expandable navbar__links list-style-none link">
+            <li><a href="index.html"> <img src="/assets/img/ico/setting.svg" alt="icono config" height="20px"> Config</a></li>
+            <li><a href="ruby.html"> <img src="/assets/img/ico/ruby.svg" alt="icono ruby" height="20px"> Ruby</a></li>
+            <li><a href="html_css.html"> <img src="/assets/img/ico/html_css.svg" alt="icono html" height="20px"> HTML & CSS</a></li>
+            <li><a href="rails.html"> <img src="/assets/img/ico/rails.svg" alt="icono rails" height="21px"> Rails</a></li>
+            <li><a href="js.html"> <img src="/assets/img/ico/js.svg" alt="icono JS" height="20px"> JavaScript</a></li>
+            <li><a href="react.html"> <img src="/assets/img/ico/react.svg" alt="icono react" height="20px"> React</a></li>
+            <li><a href="capstone.html"> <img src="/assets/img/ico/capstone.svg" alt="icono react" height="20px"> Capstone</a></li></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main>
-      <section>
-        <div class="main">
-          <h1 id="comand">Configurar Terminal</h1>
-          <h2>Comandos Básicos</h2>
-          <p>Recopilación de comandos mas usados en el terminal (minúsculas)</p>
-          <table>
-            <tr>
-              <td width="70px" height="40px"><b>pwd</b></td>
-              <td width="20px">=</td>
-              <td width="650px">Muestra la ruta completa de la ubicación actual.</td>
-            </tr>
-            <tr>
-              <td height="40px"><b>clear</b></td>
-              <td>=</td>
-              <td>Limpia/Borra la pantalla del terminal.</td>
-            </tr>
-            <tr>
-              <td height="40px"><b>ls -la</b></td>
-              <td>=</td>
-              <td>Muestra todos los archivos dentro del directorio, incluidos los ocultos.</td>
-            </tr>
-            <tr>
-              <td height="40px"><b>mkdir</b></td>
-              <td>=</td>
-              <td>Crear directorio (mkdir nombre_de_directorio).</td>
-            </tr>
-            <tr>
-              <td height="40px"><b>cd</b></td>
-              <td>=</td>
-              <td>Cambiar de directorio (cd ruta/de/la/carpeta).</td>
-            </tr>
-            <tr>
-              <td height="40px"><b>rmdir</b></td>
-              <td>=</td>
-              <td>Elimina un directorio (rmdir ruta/o/nombre/de/la/carpeta).</td>
-            </tr>
-            <tr>
-              <td height="40px"><b>rm -rf</b></td>
-              <td>=</td>
-              <td id="wsl">Elimina un "archivo" en cualquier directorio.</td>
-            </tr>
-          </table>
-          <p> </p>
-          <h2>Instalando WSL</h2>
-            <div align="center"><video width="600px" controls>
-            <source src="clip/01_Install_WSL.mp4"></video></div>
-            <p id="winter"> </p>
-          <p> </p>
-          <h2>Instalando windows terminal y ohmyzsh</h2>
-            <div align="center"><video class="vid" width="600px" controls>
-            <source src="clip/02_Install_windows_terminal_ohmyzsh.mp4"></video></div>
-          <p id="ruby"> </p>
-          <p> </p>
-          <h2>Instalando Ruby</h2>
-          <div align="center"><video width="600px" controls>
-            <source src="clip/03_Install_Ruby.mp4"></video></div>
-            <p id="node"> </p>
-          <p> </p>
-          <h2>Instalando NodeJS</h2>
-          <div align="center"><video width="600px" controls>
-            <source src="clip/04_Install_NodeJS.mp4"></video></div>
-          <p id="vsc"> </p>
-          <p> </p>
-          <h2>Instalando VSCode</h2>
-          <div align="center"><video width="600px" controls>
-            <source src="clip/05_install_VSCode.mp4"></video></div>
-          <p>• Además de las extensiones mencionadas en el video recomiendo instalar las siguientes:</p>
-            <center>
-            <div class="ext">
-              <img src="img/ext/ext_act.jpg" alt="Auto Close Tag">
-              <img src="img/ext/ext_ls.jpg" alt="Live Share">
-              <img src="img/ext/ext_lsv.jpg" alt="Live server"><br>
-              <img src="img/ext/ext_mit.jpg" alt="Material Icon Theme">
-              <img src="img/ext/ext_vscr.jpg" alt="VSCode Ruby">
+      <section class="container-major">
+        <h1 class="title"><img src="assets/img/ico/setting.svg" alt="config" height="27"> Configuración Inicial</h1>
+        <article>
+
+          <details>
+          <summary class="sub manito">Configurando terminal</summary>
+            <p>A continuación algunos comandos de terminal para empezar a familiarizarnos (minúsculas).</p>
+              <table>
+                  <tr>
+                    <td width="15%" height="40px"><b>pwd</b></td>
+                    <td width="5%">=</td>
+                    <td width="80%">Muestra la ruta completa de la ubicación actual.</td>
+                  </tr>
+                  <tr>
+                    <td height="40px"><b>clear</b></td>
+                    <td>=</td>
+                    <td>Limpia/Borra la pantalla del terminal.</td>
+                  </tr>
+                  <tr>
+                    <td height="40px"><b>ls -la</b></td>
+                    <td>=</td>
+                    <td>Muestra todos los archivos dentro del directorio, incluidos los ocultos.</td>
+                  </tr>
+                  <tr>
+                    <td height="40px"><b>mkdir</b></td>
+                    <td>=</td>
+                    <td>Crear directorio (mkdir nombre_de_directorio).</td>
+                  </tr>
+                  <tr>
+                    <td height="40px"><b>cd</b></td>
+                    <td>=</td>
+                    <td>Cambiar de directorio (cd ruta/de/la/carpeta).</td>
+                  </tr>
+                  <tr>
+                    <td height="40px"><b>rmdir</b></td>
+                    <td>=</td>
+                    <td>Elimina un directorio (rmdir ruta/o/nombre/de/la/carpeta).</td>
+                  </tr>
+                  <tr>
+                    <td height="40px"><b>rm -rf</b></td>
+                    <td>=</td>
+                    <td id="wsl">Elimina un "archivo" en cualquier directorio.</td>
+                  </tr>
+              </table><br>
+          </details>
+
+          <details>
+            <summary class="sub manito">Instalando WSL</summary>
+              <p>WSL (Windows Subsystem for Linux) es una característica de Windows que permite ejecutar una distribución de Linux en Windows 10 y versiones posteriores. Esto significa que puedes tener acceso a herramientas de línea de comandos de Linux y ejecutar programas de Linux directamente en Windows, sin necesidad de una máquina virtual o de instalar Linux en una partición separada.</p>
+              <p>WSL es útil para desarrolladores que trabajan con herramientas y tecnologías específicas de Linux, como Ruby on Rails, Python, Node.js, Docker y Kubernetes. Con WSL, pueden ejecutar estas herramientas y tecnologías directamente en Windows, lo que les permite desarrollar y probar aplicaciones en un entorno de desarrollo similar al de producción.</p>
+              <div class="vid">
+                <iframe src="https://www.youtube.com/embed/H7W3eP3dVCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div><br>              
+          </details>
+
+          <details>
+            <summary class="sub manito">Instalando windows terminal y ohmyzsh</summary>
+              <p>Windows Terminal es una aplicación de línea de comandos moderna desarrollada por Microsoft que proporciona una experiencia de terminal personalizable y potente en Windows 10. Con Windows Terminal, los usuarios pueden abrir varias pestañas en una única ventana y trabajar con varias shells, como PowerShell, CMD, WSL y más.</p>
+              <p>Oh My Zsh, por otro lado, es un framework de código abierto para la línea de comandos de Unix, que se ejecuta en sistemas operativos macOS y Linux. Ofrece una gran cantidad de características y herramientas que hacen que trabajar en la línea de comandos sea más fácil y eficiente, como autocompletado, sugerencias de comandos, temas personalizables, plugins, etc.</p>
+              <p>En conjunto, Windows Terminal y Oh My Zsh pueden proporcionar una experiencia de línea de comandos altamente personalizable y potente en Windows, con características avanzadas y herramientas de productividad para mejorar la eficiencia del usuario en el trabajo en la línea de comandos.</p>
+              <div class="vid">
+                <iframe src="https://www.youtube.com/embed/Lr4Ky2e3wgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div><br>
+          </details>
+
+          <details>
+              <summary class="sub manito">Instalando Ruby</summary>
+              <p>Ruby es un lenguaje de programación dinámico, de alto nivel y orientado a objetos que se utiliza para desarrollar una amplia variedad de aplicaciones, desde aplicaciones web hasta scripts de automatización y herramientas de línea de comandos.</p>
+              <p>Ruby es un lenguaje de programación versátil que se puede utilizar en una amplia variedad de aplicaciones, desde aplicaciones web hasta juegos y análisis de datos.</p>
+              <div class="vid">
+                <iframe src="https://www.youtube.com/embed/oHhVsPn1cc4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div><br>
+          </details>
+
+          <details>
+            <summary class="sub manito">Instalando NodeJS</summary>
+            <p>Node.js se utiliza principalmente para desarrollar aplicaciones web y servidores de aplicaciones que manejan grandes cantidades de datos y solicitudes simultáneas. Al utilizar JavaScript tanto en el lado del cliente como del servidor, Node.js permite a los desarrolladores crear aplicaciones de una manera más coherente y eficiente.</p>
+            <p>Node.js también es conocido por su escalabilidad, ya que puede manejar un gran número de conexiones simultáneas con una latencia extremadamente baja. Además, tiene una gran cantidad de librerías y herramientas disponibles a través de su administrador de paquetes, npm, lo que facilita el desarrollo de aplicaciones.</p>
+            <p>Algunas de las características de Node.js incluyen la programación asíncrona, la capacidad de manejar archivos y datos en tiempo real, la capacidad de ejecutar scripts del lado del servidor, la creación de aplicaciones en tiempo real y la capacidad de crear aplicaciones híbridas móviles y de escritorio.</p>
+            <div class="vid">
+              <iframe src="https://www.youtube.com/embed/ibbum5eelV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div><br>
+          </details>
+
+          <details>
+            <summary class="sub manito">Instalando VSCode</summary>
+            <p>VSCode es un editor de código fuente de código abierto desarrollado por Microsoft que admite múltiples lenguajes de programación y plataformas. Es una de las herramientas de desarrollo más populares utilizadas por los desarrolladores de software en la actualidad.</p>
+            <p>VSCode es altamente personalizable y extensible gracias a su gran cantidad de extensiones, lo que permite a los desarrolladores adaptar su entorno de desarrollo a sus necesidades específicas. Además, VSCode es muy ligero y rápido, lo que lo hace ideal para proyectos de desarrollo más grandes y complejos.</p>
+            <div class="vid">
+              <iframe src="https://www.youtube.com/embed/WZbsFAWcEJw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div><br>
+            <p>Además de las extensiones mencionadas en el video recomiendo instalar las siguientes:</p>
+            <ol>
+              <li>Auto Close Tag  |  <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag" target="_blank">Click here</a></li>
+              <li>Live Share  |  <a href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare" target="_blank">Click here</a></li>
+              <li>Live Server  |  <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Click here</a></li>
+              <li>Material Icon Theme  |  <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank">Click here</a></li>
+              <li>VSCode Ruby  |  <a href="https://marketplace.visualstudio.com/items?itemName=wingrunr21.vscode-ruby" target="_blank">Click here</a></li>
+            </ol>
+          </details>
+
+          <details>
+            <summary class="sub manito">Instalando Git</summary>
+            <p>Git es un sistema de control de versiones de software de código abierto que se utiliza para registrar los cambios realizados en archivos y coordinar el trabajo en equipo en proyectos de software. Fue desarrollado originalmente por Linus Torvalds en 2005 para el desarrollo del kernel de Linux, pero desde entonces se ha convertido en una herramienta popular en muchos otros proyectos de software.</p>
+            <p>Git permite a los desarrolladores mantener un historial completo de cambios en un proyecto, rastrear quién hizo cada cambio y cuándo se realizó, y revertir a versiones anteriores si es necesario. También permite a los desarrolladores trabajar en diferentes ramas de código al mismo tiempo, lo que facilita la colaboración en equipo.</p>
+            <div class="vid">
+              <iframe src="https://www.youtube.com/embed/di9JYNYFoJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div><br>
+            <p>Despues de haber instalado Git abrimos Terminal y digitamos los siguientes comandos:</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scode">git --version</span>
+<span class="scom"># Mostrará la versión de git que tiene instalada.</span>
+
+<span class="scom"># Para instalar la última versión estable de Git en Ubuntu:</span>
+<span class="scode">sudo add-apt-repository ppa:git-core/ppa</span>
+<span class="scode">sudo apt update</span>
+<span class="scode">sudo apt install git</span>
+
+<span class="scode">git --version</span>
+<span class="scom"># Consultamos nuevamente para confirmar que se actualizó a la ultima versión</span></pre>
+              </code>
             </div>
-            </center>
-          <p id="git"> </p>
-          <p> </p>
-          <h2>Instalando Git</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p id="gh"> </p>
-          <p> </p>
-          <h2>Conociendo Github</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-        </div>        
+            <p>Para finalizar con la configuracion de Git debemos registrar un "nombre de usuario", "contraseña" y "correo electrónico"; Recomiendo anotarlas en un lugar seguro, "editor de código predeterminado" (VSCode) y la "rama inicial predeterminada" (main).</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scode">git config --global user.name "Saturnino Reyes"</span>
+<span class="scom"># Entre las comillas ingresarás tu nombre de usuario.</span>
+
+<span class="scode">git config --global user.email "aquivatucorreo@mail.com"</span>
+
+<span class="scom"># Los siguientes comandos ejecutarlos tal cual línea por línea</span>
+<span class="scode">git config --global core.autocrlf input</span>
+<span class="scode">git config --global core.safecrlf true</span>
+<span class="scode">git config --global core.editor "code --wait"</span>
+<span class="scode">git config --global init.defaultBranch main</span></pre>
+              </code>
+            </div>
+
+
+          </details>
+
+          <details>
+            <summary class="sub manito">Comandos básicos de Git</summary>
+            <div class="ptb16">
+              <code>
+                <pre class="codigo">
+<table>
+                    <tr>
+                      <td class="scode" width="45%" height="20px">git init</td>
+                    <td class="scom" width="55%"># Inicializar repositorio</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">rm -rf .git</td>
+                      <td class="scom"># Detener Git</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git clone</td>
+                      <td class="scom"># Clonar repositorio</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px"></td>
+                      <td class="scom"></td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git add file1.js</td>
+                      <td class="scom"># Agrega 1 archivo específico al staging area</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git add file1.js file2.js</td>
+                      <td class="scom"># Agrega multiples archivos al staging area</td>
+                    </tr>
+                    <tr>
+                      <td class="scoder" height="20px">git add .</td>
+                      <td class="scom"># Prepara el directorio actual y todo su contenido</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git add --all</td>
+                      <td class="scom"># Prepara todos los archivos rastreados y no rastreados</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px"></td>
+                      <td class="scom"></td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git status</td>
+                      <td class="scom"># Te muestra el status completo de las modificaciones</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git status -s</td>
+                      <td class="scom"># Te muestra el status resumido de las modificaciones</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px"></td>
+                      <td class="scom"></td>
+                    </tr>
+                    <tr>
+                      <td class="scoder" height="20px">git commit -m "Message"</td>
+                      <td class="scom"># Confirma los cambios realizados en staging area, en "comillas" colocar una breve descripción del tipo de modificación realizado.</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git commit</td>
+                      <td class="scom"># Abre el editor de código predeterminado para escribir un mensaje descriptivo mas largo para el commit</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git commit --amend</td>
+                      <td class="scom"># Modificar el ultimo commit</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px"></td>
+                      <td class="scom"></td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git rm file1.js</td>
+                      <td class="scom"># Elimina 1 archivo específico del directorio de trabajo y del staging area</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git rm --cached file1.js</td>
+                      <td class="scom"># Elimina 1 archivo específico del staging area solamente</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px"></td>
+                      <td class="scom"></td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git diff</td>
+                      <td class="scom"># Muestra las diferencias entre los cambios de staging area y el último commit confirmado</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git log</td>
+                      <td class="scom"># Muestra el historial de commits en un repositorio Git</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git show</td>
+                      <td class="scom"># Muestra información detallada sobre el commit</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git restore</td>
+                      <td class="scom"># Restaura los archivos del directorio de trabajo al último commit confirmado</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git merge bugfix</td>
+                      <td class="scom"># Se usa para fusionar la rama bugfix en la rama actual en la que se encuentra el usuario</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git rebase main</td>
+                      <td class="scom"># Se usa para mover la rama actual a la punta de la rama main y aplicar los cambios de la rama actual encima de los cambios más recientes de la rama main</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px"></td>
+                      <td class="scom"></td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git branch bugfix</td>
+                      <td class="scom"># Crea una nueva rama (branch) llamada bugfix</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git branch -M main</td>
+                      <td class="scom"># Cambia a la rama Main</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git branch -d bugfix</td>
+                      <td class="scom"># Borra la rama llamada bugfix</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="scode" height="20px">git branch --merged</td>
+                      <td class="scom"># Muestra las ramas fusionadas</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px">git branch --no-merged</td>
+                      <td class="scom"># Muestra las ramas no fusionadas</td>
+                    </tr>
+                    <tr>
+                      <td class="scode" height="20px"></td>
+                      <td class="scom"></td>
+                    </tr>
+                    <tr>
+                      <td class="scoder" height="20px">git push origin main</td>
+                      <td class="scom"># Se utiliza para enviar los cambios realizados en la rama local main al repositorio remoto origin en la misma rama main</td>
+                    </tr>
+                  </table></pre>
+              </code>
+            </div>
+          </details>
+
+          <details>
+            <summary class="sub manito">Configurando Github</summary>
+            <p>Ahora debemos vincular nuestra cuenta de Git con nuestra cuenta de <a href="https://github.com/" target="_blank">Github</a>, para eso podemos consultar la <a href="https://docs.github.com/es/authentication/connecting-to-github-with-ssh/about-ssh" target="_blank">Documentación Oficial</a>, o también podemos ejecutar los siguientes pasos:</p>
+            <p>Debemos abrir la terminal, una vez dentro asegurarnos de estar en home:</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scode">cd ~</span></pre>
+              </code>
+            </div>
+            <p>Una vez estamos en home ejecutamos los siguientes comandos:</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scode">ssh-keygen -o</span>
+<span class="scom"># (Presionar Enter) Empezamos a generar una llave Publica/Privada.</span>
+<span class="scom"># Luego te pedirá que ingreses tu Passphrase (se recomienda dejarlo en blanco y solo presionar Enter)</span>
+<span class="scom"># Pedirá confirmación de Passphrase (Nuevamente presionar enter)</span>
+
+<span class="scom"># Creada la llave Publica/Privada nos dirigimos al directorio ssh:</span>
+<span class="scode">cd ~/.ssh</span>
+
+<span class="scom"># Dentro del directorio ssh ingresamos el comando:</span>
+<span class="scode">ll</span>
+
+<span class="scom"># Esto nos enlistará el contenido del directorio ssh</span>
+<span class="scode">cat id_rsa.pub</span>
+<span class="scom"># Nos abre el archivo id_rsa.pub veremos un monton de caracteres, todo eso es la llave debemos "copiarlo" de principio a fin</span></pre>
+              </code>
+            </div>
+            <p>Nos vamos al navegador y entramos a nuestra cuenta de <a href="https://github.com/" target="_blank">Github</a> y nos dirigimos a la esquina superior derecha en la foto de nuestra cuenta y damos click, se pespliega un menu de opciones y seleccionamos Settings.</p>
+            <p>Luego en el Menu del lado izquierdo seleccionamos la opcion <span class="scoder">SSH and GPG Keys</span>.</p>
+            <div class="ptb16">
+              <div class="codigo dg" style="grid-template-columns: 250px 400px;">
+                <div>
+                  <img src="/assets/img/sett_gh.png" alt="menu github">
+                </div>
+                <div>
+                  <img src="/assets/img/ssh_gh.png" alt="menu github">
+                </div>
+              </div>
+            </div>
+            <p>Hacer Click en New SSH Key.</p>
+            <div class="ptb16">
+              <div class="codigo dg" style="grid-template-columns: 800px;"">
+                <img src="/assets/img/new_ssh_gh.png" alt="new shh">
+              </div>
+            </div>
+            <p>En el campo "Title" (Título), agrega una etiqueta descriptiva para la clave nueva. Por ejemplo, si estás utilizando un portátil personal, puedes llamar a esta clave "Portátil personal".</p>
+            <p>Pega tu clave pública (la que copiamos en terminal -id_rsa.pub-) en el campo "Key".</p>
+            <p>Y por ultimo click en Add SSH key.</p>
+            <div class="ptb16">
+              <div class="codigo dg" style="grid-template-columns: 800px;"">
+                <img src="/assets/img/add_new_ssh_gh.png" alt="new shh">
+              </div>
+            </div>
+            <p>Regresamos a Terminal e ingresamos el siguiente comando:</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scode">ssh -T git@github.com</span></pre>
+              </code>
+            </div>
+            <p>Puedes ver una advertencia como la siguiente:</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scom">The authenticity of host 'github.com (IP ADDRESS)' can't be established.</span>
+<span class="scom">ECDSA key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.</span>
+<span class="scom">Are you sure you want to continue connecting (yes/no)?</span></pre>
+              </code>
+            </div>
+            <p>Escribimos yes (si), se nos mostrará el siguiente mensaje:</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scom">Hi USERNAME! You've successfully authenticated, but GitHub does not provide shell access.</span></pre>
+              </code>
+            </div>
+            <p>Listo ya tenemos git vinculado con nuestra cuenta github.</p>
+
+
+
+
+          </details>
+        
+        </article>
       </section>
     </main>
-    <footer>
-        <center>
-            <p class="fut" align="center">Sponsored by:</p><BR>
-            <img class="fut" src="img/foot/bcp.png" alt="bcp">
-            <img class="fut" src="img/foot/ca.png" alt="codeable">
-            <img class="fut" src="img/foot/na.png" alt="nasa">
-            <img class="fut" src="img/foot/nx.png" alt="netflix">
-            <img class="fut" src="img/foot/ms.png" alt="microsoft">
-        </center>
+
+    <footer class="wall-foot">      
+      <div class="fut">
+        <div>
+          <img src="assets/img/signature.jpg" alt="signature" height="28px">
+        </div>
+        <div>
+          <span>  © 2023 sponsored by {Codeable}</span>
+        </div>
+      </div>    
     </footer>
   </body>
 </html>

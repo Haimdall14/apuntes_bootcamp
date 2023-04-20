@@ -52,31 +52,6 @@
     align-items: center;
   }
   
-  /* .navbar__links .link {
-     text-decoration: none;
-     color: var(--primary);
-     padding: 0.25em 0.5em;
-     gap: 0.625em;
-     border-radius: .5em;
-  }
-  
-  .navbar__links .link:hover {
-    color: var(--primary-dark);
-  }
-
-  .navbar__links .link:visited {
-    color: #515356;
-  }
-  
-  .navbar__links .link:active {
-    color: var(--primary-darker);
-  }
-
-  .navbar__links .link:focus {
-    outline: 2px solid var(--primary);
-    outline-offset: 1px;
-  } */
-  
   #menu-mobile,
   #menu-open,
   #menu-close {

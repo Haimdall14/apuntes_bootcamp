@@ -1,24 +1,22 @@
 
 .wall-foot {
-    margin: 0;
-    padding: 0;
+    margin: 0;    
     background-image: url(/assets/img/wall_foot.jpg);
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
-    font-weight: 500;
-    color: #fff;
-    font-size: 1rem;
-    padding: 18px;
     background-size: cover;
     background-repeat: no-repeat;    
     background-position: center;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 17px;
 }
 
 .fut {
-    display:flex;
-    max-width: fit-content;
+    display: flex;
+    justify-content: center;    
 }
 

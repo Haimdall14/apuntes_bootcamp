@@ -1,4 +1,62 @@
 
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/assets/img/Wall.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: justify;    
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #333333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #FF803C;
+  border-radius: 10px;
+}
+
+.codigo {
+  border-radius: 12px;
+  background-color: #282C35;
+  padding: 1.8rem 1.8rem;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.codigo::-webkit-scrollbar {
+  height: 5px;
+  background: #333333;  
+}
+
+.codigo::-webkit-scrollbar-thumb {
+  background: #FF803C;
+  border-radius: 20px;
+}
+
+.scode {
+  color: #67A3D8;
+}
+
+.scom {
+  color: #797979;
+}
+
+.scoder {
+  color: yellowgreen;
+}
+
+pre {
+  line-height: 20px;
+}
+
 .container1024 {
   max-width: 1024px;
   padding: 0 16px;
@@ -7,7 +65,8 @@
 
 .container-major {
   max-width: 1024px;
-  padding: 1rem 1rem 5rem 1rem;
+  padding: 2rem 1rem 7rem 1rem;
   margin: auto;
 }
+
 
