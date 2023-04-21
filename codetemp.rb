@@ -17,7 +17,11 @@ p sum("Lobelto", 1, 2, 3, 4, 5, 6, 7, 8)
 
 
 
-
+=begin
+Este es un
+comentario
+de varias líneas
+=end
 
 
 

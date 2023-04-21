@@ -50,7 +50,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .scoder {
-  color: yellowgreen;
+  color: #9ACD32;
+}
+
+.sres {
+  color: #EC796C;
 }
 
 pre {
