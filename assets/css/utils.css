@@ -12,6 +12,7 @@ p {
 ol {    
     margin-top: 0;
     padding-bottom: 16px;
+    line-height: 24px;
 }
 
 .vid {

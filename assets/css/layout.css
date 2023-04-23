@@ -1,8 +1,13 @@
 
+hr {
+  border: 1px solid #FF803C;
+  margin: 2.5rem 0;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-image: url(/assets/img/Wall.png);
+  background-image: url(/assets/img/Wally.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -12,7 +17,7 @@ body {
 
 body::-webkit-scrollbar {
   width: 10px;
-  background: #333333;
+  background: #000000;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -55,6 +60,14 @@ body::-webkit-scrollbar-thumb {
 
 .sres {
   color: #EC796C;
+}
+
+.piepag {
+  color: #D8f8f8;
+  font-size: 15px;
+  padding-left: 24px;
+  text-indent: 0px;
+  font-weight: 300;
 }
 
 pre {
