@@ -240,9 +240,9 @@
                   </ul>
                   <p>En conclusión, Ruby ofrece una variedad de estructuras de control de flujo que permiten a los desarrolladores escribir programas más complejos y poderosos. La mayoría de las estructuras de control de flujo en Ruby tienen una sintaxis clara y fácil de entender.</p>
                   <p>Es importante tener en cuenta que un uso excesivo de estructuras de control de flujo puede dificultar la lectura y el mantenimiento del código. Por lo tanto, es recomendable utilizar estructuras de control de flujo de manera efectiva y en combinación con otras técnicas de programación para escribir código claro y fácil de entender.</p>
-                  <p id="condition">Además, Ruby también ofrece varias instrucciones de control de bucles que permiten a los desarrolladores tener un mayor control sobre la ejecución de los bucles y la iteración. La comprensión y el uso efectivo de estas instrucciones son esenciales para escribir código eficiente y funcional.</p>
+                  <p>Además, Ruby también ofrece varias instrucciones de control de bucles que permiten a los desarrolladores tener un mayor control sobre la ejecución de los bucles y la iteración. La comprensión y el uso efectivo de estas instrucciones son esenciales para escribir código eficiente y funcional.</p>
 
-                <img class="chr" src="/assets/img/hr.png" alt="hr">
+                <img  id="condition" class="chr" src="/assets/img/hr.png" alt="hr">
 
                 <p><span class="sres"><b>1. if | elsif | else</b></span> es muy común en Ruby para controlar diferentes casos que pueden ocurrir dentro de una estructura condicional.</p>
                 <div class="ptb16">
@@ -260,9 +260,9 @@
                   </div>
                 </div>
                 <p>En este ejemplo, la estructura unless se utiliza para evaluar si la variable edad es menor que 18. Si la edad es menor que 18, se imprime "Eres menor de edad". Si la edad es mayor o igual a 18, se imprime "Eres mayor de edad".</p>
-                <p id="bucles">En resumen, unless es una estructura de control de flujo útil para ejecutar una sección de código solo si una condición no se cumple.</p>
+                <p>En resumen, unless es una estructura de control de flujo útil para ejecutar una sección de código solo si una condición no se cumple.</p>
 
-                <img class="chr" src="/assets/img/hr.png" alt="hr">
+                <img id="bucles" class="chr" src="/assets/img/hr.png" alt="hr">
 
                 <p><span class="sres"><b>3. do</b></span> se utiliza para indicar el inicio del bloque de código que se ejecutará para cada elemento de la colección, y end se utiliza para indicar el final del bloque de código. </p>
                 <p>El siguiente es un ejemplo simple de cómo usar do con el método each para iterar sobre una matriz e imprimir cada elemento:</p>
@@ -312,9 +312,9 @@
                     <img src="/assets/img/ruby/rb1/cf_for.png" alt="ruby for">
                   </div>
                 </div>
-                <p id="structure">Es importante tener en cuenta que en Ruby, es más común utilizar otras estructuras de control de flujo como each y map para iterar sobre colecciones de elementos, ya que son más flexibles y poderosas que la estructura for. Sin embargo, for sigue siendo una opción válida y útil en algunos casos.</p>
+                <p>Es importante tener en cuenta que en Ruby, es más común utilizar otras estructuras de control de flujo como each y map para iterar sobre colecciones de elementos, ya que son más flexibles y poderosas que la estructura for. Sin embargo, for sigue siendo una opción válida y útil en algunos casos.</p>
                 
-                <img class="chr" src="/assets/img/hr.png" alt="hr">
+                <img id="structure" class="chr" src="/assets/img/hr.png" alt="hr">
 
                 <p><span class="sres"><b>7. case | when</b></span> son palabras clave en el lenguaje de programación Ruby que se utilizan para realizar una serie de comprobaciones de igualdad en una expresión dada.</p>
                 <p>Por ejemplo, el siguiente código en Ruby utiliza case y when para determinar si un número es positivo, negativo o cero:</p>
@@ -583,7 +583,7 @@
           <!-- <details> -->
             <summary class="sub manito">Ruby Methods</summary>
 
-              <!-- <details> -->
+              <details>
                 <summary class="subin manito">Concepto</summary>
                 <p>En Ruby, un método es una pieza de código que se puede llamar o invocar para realizar una tarea específica. Los métodos son definidos dentro de clases o módulos, y pueden ser públicos, privados o protegidos, lo que afecta su visibilidad y accesibilidad.</p>
                 <p>Para definir un método en Ruby, se utiliza la palabra clave def seguida del nombre del método y sus argumentos entre paréntesis (si los tiene). Luego, el cuerpo del método se escribe entre las palabras clave def y end.</p>
@@ -596,17 +596,164 @@
                 <img class="chr" src="/assets/img/hr.png" alt="hr">
 
                 <h2>Invoque Methods (llamando al método)</h2>
+                <p>Para invocar o llamar a un método lo hacemos con el nombre del método seguido de unos parentesis donde debemos indicar un argumento para el parámetro, (entiéndase como asignarle un valor a una variable)</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 350px;">
+                    <img src="/assets/img/ruby/rmethods/MethodInvoque.png" alt="Invoque Methods">
+                  </div>
+                </div>
+                <hr>
+              </details>
+
+              <details>
+                <summary class="subin manito">Return Explicit and Implicit</summary>
+                <p>En Ruby, hay dos formas diferentes en las que los métodos pueden devolver valores: "Return Explicit" y "Return Implicit".</p>
+                <p><span class="sres"><b>Explicit Return :</b></span> se refiere a cuando se utiliza la palabra clave "return" para indicar que una función o método debe devolver un valor específico.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 130px;">
+                    <img src="/assets/img/ruby/rmethods/MethodExplicit.png" alt="Method Explicit">
+                  </div>
+                </div>
+                <p><span class="sres"><b>Implicit return :</b></span> se produce cuando la última línea de una función o método es una expresión que se evalúa como el valor de retorno.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 130px;">
+                    <img src="/assets/img/ruby/rmethods/MethodImplicit.png" alt="Method Implicit">
+                  </div>
+                </div>
+                <p>Es importante tener en cuenta que la mayoría de las veces en Ruby se utiliza el retorno implícito, ya que es más conciso y hace que el código sea más fácil de leer. Sin embargo, en ciertas situaciones, puede ser necesario utilizar el retorno explícito para devolver un valor específico.</p>
+                <hr>
+              </details>
+
+              <details>
+                <summary class="subin manito">Default Arguments</summary>
+                <p>Los "default arguments" son valores predeterminados que se pueden asignar a los parámetros de un método. Esto significa que si no se proporciona un argumento al invocar al método, se usará el valor predeterminado.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 630px;">
+                    <img src="/assets/img/ruby/rmethods/MethodDefaultArgum.png" alt="Default Argument">
+                  </div>
+                </div>
+                <p>En este caso, el segundo parametro tiene un valor predeterminado, mientras que el primer y tercer parametro son obligatorios. Si se invoca al método con dos argumentos, el segundo parametro conserva el valor predeterminado como argumento y el tercer parametro recibirá el segundo argumento que se proporciona.</p>
+                <hr>
+              </details>
+
+              <details>
+                <summary class="subin manito">Truthy y Falsy</summary>
+                <p>En Ruby, un valor "truthy" se refiere a cualquier valor que se evalúa como verdadero en un contexto booleano. Por otro lado, un valor "falsy" se refiere a cualquier valor que se evalúa como falso en un contexto booleano.</p>
+                <p>En general, los siguientes valores se consideran <span class="sres">Truthy</span> en Ruby:</p>
+                <ul>
+                  <li>Cualquier valor numérico diferente de cero (por ejemplo, 1, 3.14, -5).</li>
+                  <li>Cualquier cadena de caracteres no vacía (por ejemplo, "hola", "Ruby").</li>
+                  <li>Cualquier objeto (por ejemplo, una instancia de una clase personalizada).</li>
+                  <li>Cualquier arreglo, hash o estructura de datos que no esté vacía.</li>
+                  <li>El valor booleano true.</li>
+                </ul>
+                <p>Por otro lado, los siguientes valores se consideran <span class="sres">Falsy</span> en Ruby:</p>
+                <ul>
+                  <li>El valor booleano false.</li>
+                  <li>El valor nulo (nil).</li>
+                  <li>El número cero (0).</li>
+                  <li>Una cadena de caracteres vacía ("").</li>
+                  <li>Un arreglo, hash o estructura de datos vacía.</li>
+                </ul>
+                <p>Es importante tener en cuenta que el concepto de Truthy y Falsy en Ruby es específico del contexto booleano. En otros contextos, estos mismos valores pueden tener un comportamiento diferente. Por ejemplo, el número cero puede ser válido en un contexto numérico, pero se evalúa como Falsy en un contexto booleano.</p>
+                <hr>
+              </details>
+
+              <details>
+                <summary class="subin manito">Keywords Arguments</summary>
+                <p>En Ruby, los  "keyword arguments" son una característica que permite pasar argumentos a un método mediante la especificación de sus nombres explícitamente.</p>
+                <p>Por defecto, los argumentos de un método en Ruby se pasan por orden de posición, lo que significa que el primer argumento que se especifica se asigna al primer parámetro del método, el segundo argumento se asigna al segundo parámetro, y así sucesivamente. Sin embargo, cuando se utilizan Keywords Arguments, el orden de los argumentos ya no importa, ya que se especifican explícitamente los nombres de los parámetros que se están pasando.</p>
+                <p>Para definir un método con Keywords Arguments, se utiliza el símbolo ( <span class="sres"><b>:</b></span> ) se coloca después del nombre del argumento y antes del valor predeterminado asignado al mismo (si es que se le ha asignado alguno).</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 330px;">
+                    <img src="/assets/img/ruby/rmethods/MethodKeywordArgum.png" alt="Keywords Argument">
+                  </div>
+                </div>
+                <p>En este ejemplo, el método saludar toma dos argumentos de palabras clave: <span class="scode">nombre:</span> y <span class="scode">mensaje:</span>. Cuando se llama a este método, se debe especificar el nombre de cada argumento junto con su valor. De esta manera, el orden de los argumentos ya no importa, y es más fácil entender qué valor se está pasando a cada parámetro. Los argumentos de palabras clave también pueden tener valores predeterminados, lo que permite omitirlos al llamar al método y usar su valor por defecto.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 330px;">
+                    <img src="/assets/img/ruby/rmethods/MethodKeywordArgum2.png" alt="Keywords Argument">
+                  </div>
+                </div>
+                <p>En este ejemplo, el argumento mensaje tiene un valor predeterminado de "Hola", por lo que se puede llamar al método sin especificar este argumento.</p>
+                <hr>
+              </details>
+
+              <details>
+                <summary class="subin manito">Splat Operator</summary>
+                <p>El Splat Operator se representa por el símbolo ( <span class="scoder">*</span> ) y se utiliza para indicar que un parámetro puede recibir cierta cantidad de argumentos, que serán <span class="sres">tratados como un arreglo</span> dentro del método.</p>
+                <p>Cuando se utiliza el Splat Operator en el contexto de los parámetros de un método, puede aparecer tanto al inicio como al final de la lista de parámetros, aunque es más común encontrarlo al final. Si se utiliza al inicio, indica que el método espera al menos un argumento, y los demás argumentos opcionales pueden ser proporcionados como un arreglo. Si se utiliza al final, indica que el método espera cualquier cantidad de argumentos, y que éstos serán capturados en un solo arreglo.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 450px;">
+                    <img src="/assets/img/ruby/rmethods/MethodSplatOp.png" alt="Splat Operator">
+                  </div>
+                </div>
+                <p>En este ejemplo, el Splat Operator indica que el <span class="scode">método sum</span> puede recibir cualquier cantidad de argumentos, que serán tratados como un <span class="scode">Array</span> llamado numbers dentro del <span class="scode">método sum</span>. Luego, se utiliza un ciclo <span class="scode">each</span> para sumar los números del arreglo y devolver el resultado.</p>
+                <hr>
+              </details>              
+
+              <!-- <details> -->
+                <summary class="subin manito">Double Splat Operator</summary>
+                <p>En Ruby, el Double Splat Operator ( <span class="scoder">**</span> ), también conocido como "hash rocket", permite a los parametros recibir argumentos del tipo Keywords Arguments los cuales serán <span class="sres">tratados como un Hash</span>. El Double Splat Operator convierte estos Keywords Arguments en un hash con sus keys y values correspondientes.</p>
+
 
 
 
               </details>
 
 
+         
+          </details>
+          <p class="piepag">Concepto, Retorno Implicito y Explicito, Default Arguments, Truthy y Falsy, Keywords Arguments, Splat Operator, Double Splat Operator.</p>
 
+          <details>
+            <summary class="sub manito">Ruby Blocks</summary>
 
 
           </details>
-          <p class="piepag">Concepto, Retorno Implicito y Explicito, Default Arguments, Truthy y Falsy, Keywords Arguments, Splat Operator, Double Splat Operator.</p>
+
+          <details>
+            <summary class="sub manito">Ruby Classes</summary>
+            
+
+          </details>
+
+          <details>
+            <summary class="sub manito">Ruby Modules</summary>
+            
+
+          </details>
+
+          <details>
+            <summary class="sub manito">Ruby Files</summary>
+            
+
+          </details>
+
+          <details>
+            <summary class="sub manito">Ruby CSV JSON YAML</summary>
+            
+
+          </details>
+
+          <details>
+            <summary class="sub manito">Ruby Regex</summary>
+            
+
+          </details>
+
+          <details>
+            <summary class="sub manito">Ruby Exceptions and Testing</summary>
+            
+
+          </details>
+
+          <details>
+            <summary class="sub manito">Ruby HTTP</summary>
+            
+
+          </details>
+
 
 
           </div>

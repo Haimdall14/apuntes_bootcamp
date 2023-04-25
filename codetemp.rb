@@ -1,16 +1,4 @@
 
-def sum(name, *numbers)
-# name = Lobelto
-# *numbers = [1, 2, 3, 4, 5, 6, 7, 8] ARRAY
-  result = 0
-  numbers.each { |number| result += number }
-
-  "hello #{name}, the result is => #{result}"
-end
-
-p sum("Lobelto", 1, 2, 3, 4, 5, 6, 7, 8)
-
-
 #====== INICIO COMENTAR =============
 
 # Se imprime:
@@ -409,6 +397,85 @@ def nombre_del_metodo (parametros)
   parametros + 2        #operación del metodo
 end
 # Con end cerramos el scope (alcance) del metodo.
+
+
+
+#=========== METHODS INVOQUE =============
+
+def nombre_de_metodo (parametros)
+  parametros + 2
+end
+
+#===== Llamando al método =====
+nombre_de_metodo(argumento_para_parametro)
+
+
+
+#=========== METHODS RETURN EXPLICIT / IMPLICIT =============
+
+def suma(a, b)
+  return a + b
+end
+
+
+def suma(a, b)
+  a + b
+end
+
+
+
+#=========== METHODS DEFAULT ARGUMENTS =============
+
+def nombre_del_metodo(parametro1, parametro2 = valor_predeterminado, parametro3)
+  # Cuerpo del método
+end
+
+# Invocamos al metodo y solo le pasamos 2 argumentos
+nombre_del_metodo(argumento1, argumento2)
+
+
+
+#=========== METHODS KEYWORDS ARGUMENTS =============
+
+def saludar(nombre:, mensaje:)
+  puts "#{mensaje}, #{nombre}!"
+end
+
+saludar(nombre: "Juan", mensaje: "Hola")
+
+# Hola Juan!
+
+
+
+def saludar(nombre:, mensaje: "Hola")
+  puts "#{mensaje}, #{nombre}!"
+end
+
+saludar(nombre: "Juan")
+
+# Hola Juan!
+
+
+
+#=========== METHODS SPLAT OPERATOR =============
+
+def sum(name, *numbers)
+# name = Lobelto
+# *numbers = [1, 2, 3, 4, 5, 6, 7, 8] ARRAY
+  result = 0
+  numbers.each { |number| result += number }
+    
+  "Hello #{name}, the result is => #{result}"
+end
+    
+p sum("Lobelto", 1, 2, 3, 4, 5, 6, 7, 8)
+#Aqui pasamos los argumentos para el llamado del método
+
+# "Hello Lobelto, the result is => 36"
+
+
+
+
 
 
 
