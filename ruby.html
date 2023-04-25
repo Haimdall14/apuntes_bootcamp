@@ -32,8 +32,7 @@
             <li><a href="html_css.html"> <img src="/assets/img/ico/html_css.svg" alt="icono html" height="20px"> HTML & CSS</a></li>
             <li><a href="rails.html"> <img src="/assets/img/ico/rails.svg" alt="icono rails" height="21px"> Rails</a></li>
             <li><a href="js.html"> <img src="/assets/img/ico/js.svg" alt="icono JS" height="20px"> JavaScript</a></li>
-            <li><a href="react.html"> <img src="/assets/img/ico/react.svg" alt="icono react" height="20px"> React</a></li>
-            <li><a href="capstone.html"> <img src="/assets/img/ico/capstone.svg" alt="icono react" height="20px"> Capstone</a></li></li>
+            <li><a href="react.html"> <img src="/assets/img/ico/react.svg" alt="icono react" height="20px"> React</a></li>            
           </ul>
         </nav>
       </div>
@@ -76,6 +75,7 @@
                   <li>Bibliotecas estándar ricas que cubren una amplia variedad de áreas, desde programación de redes hasta procesamiento de texto.</li>
                 </ul>
                 <p>En resumen, Ruby es un lenguaje de programación poderoso y expresivo que se enfoca en hacer la programación fácil y agradable, lo que lo convierte en una opción popular para una amplia variedad de aplicaciones.</p>
+                <hr>
               </details>
 
               <details>
@@ -97,6 +97,7 @@
                   <li><span class="sres">Nulos (NilClass):</span> representa la ausencia de un valor.<br>Ejemplo: nil.</li>
                 </ol>
                 <p>Estos son algunos de los tipos de datos en Ruby, aunque hay otros tipos de datos más complejos y especializados que se pueden utilizar en programación.</p>
+                <hr>
               </details>
 
               <details>
@@ -107,20 +108,21 @@
                   <li>"puts" agrega automáticamente un salto de línea al final de la salida impresa,</li>
                   <li>"print" imprimirá en la misma línea varios print (sin salto de línea).</li>
                 </ul>
+                <hr>
               </details>
 
               <details>
                 <summary class="subin manito">Concatenar / Interpolar</summary>
                 <p>En Ruby, concatenar y interpolar son dos formas diferentes de combinar cadenas de caracteres.</p>
-                <p>La concatenación se refiere a la unión de dos o más cadenas de caracteres en una sola cadena. En Ruby, se utiliza el operador de concatenación + para unir dos cadenas de caracteres. Por ejemplo:</p>
+                <p><span class="sres"><b>• Concatenar</b></span> se refiere a la unión de dos o más cadenas de caracteres en una sola cadena. En Ruby, se utiliza el operador de concatenación + para unir dos cadenas de caracteres. Por ejemplo:</p>
                 <div class="ptb16">
                   <div class="codigo dg" style="grid-template-columns: 350px;">
                     <img src="/assets/img/ruby/rb1/concat.png" alt="ruby concat">
                   </div>
                 </div>
                 <p>Como se puede ver en el ejemplo, el operador + se utiliza para concatenar las variables nombre y apellido con un espacio en blanco en el medio.</p>
-                <hr>
-                <p>Por otro lado, la interpolación se refiere a la inclusión de valores de variables en una cadena de caracteres. En Ruby, se utiliza el signo de almohadilla # seguido de llaves { } para interpolar una variable en una cadena de caracteres. Por ejemplo:</p>
+                
+                <p><span class="sres"><b>• Interpolar</b></span> se refiere a la inclusión de valores de variables en una cadena de caracteres. En Ruby, se utiliza el signo de almohadilla # seguido de llaves { } para interpolar una variable en una cadena de caracteres. Por ejemplo:</p>
                 <div class="ptb16">
                   <div class="codigo dg" style="grid-template-columns: 350px;">
                     <img src="/assets/img/ruby/rb1/interpola.png" alt="ruby interpolar">
@@ -128,6 +130,7 @@
                 </div>
                 <p>En este caso, en lugar de utilizar el operador + para concatenar las variables nombre y apellido, se utiliza la interpolación para incluir el valor de las variables en la cadena de caracteres utilizando las llaves { } y el signo de almohadilla #.</p>
                 <p>En resumen, la principal diferencia entre concatenar e interpolar en Ruby es que la concatenación une dos o más cadenas de caracteres en una sola, mientras que la interpolación permite incluir el valor de una variable en una cadena de caracteres.</p>
+                <hr>
               </details>
 
               <details>
@@ -152,6 +155,7 @@
                   <li>Explicación: se pueden agregar comentarios para explicar la intención detrás del código, el propósito de las variables o las decisiones de diseño.</li>
                 </ul>
                 <p>Es importante recordar que los comentarios no afectan la ejecución del código y solo son visibles para los desarrolladores que leen el código fuente. Los comentarios deben utilizarse de manera efectiva para hacer el código más legible y fácil de entender para los desarrolladores que lo mantienen y mejoran con el tiempo.</p>
+                <hr>
               </details>
 
               <details>
@@ -169,6 +173,7 @@
                   <li><span class="sres">Potencia (**):</span> se utiliza para elevar un valor a una potencia determinada.<br>Ejemplo: 2 ** 3 devuelve 8 (ya que 2 elevado a la potencia de 3 es igual a 8).</li>
                 </ol>
                 <p>Estos son los operadores matemáticos básicos en Ruby, pero también hay otros operadores matemáticos avanzados, como operadores de comparación, operadores de asignación, operadores bit a bit, etc. que se utilizan en programación.</p>
+                <hr>
               </details>
 
               <details>
@@ -182,20 +187,22 @@
                   <li><span class="sres"><=  :</span>  Compara si un valor es menor o igual que otro.  Ejemplo: 2 <= 2 devuelve <span class="scode">true</span>.</li>
                   <li><span class="sres">>=  :</span>  Compara si un valor es mayor o igual que otro.  Ejemplo: 3 >= 3 devuelve <span class="scode">true</span>.</li>
                 </ul>
+                <hr>
               </details>
 
               <details>
                 <summary class="subin manito">Operadores Lógicos</summary>
-                <p>En Ruby, <span class="scode"><b>&&</b></span>, <span class="scode"><b>| |</b></span>, y <span class="scode"><b>!</b></span> son operadores lógicos que se utilizan para evaluar expresiones booleanas y producir un resultado booleano. A continuación se describen los conceptos de cada uno de estos operadores:</p>
+                <p>En Ruby, <span class="sres"><b>&&</b></span>, <span class="sres"><b>| |</b></span>, y <span class="sres"><b>!</b></span> son operadores lógicos que se utilizan para evaluar expresiones booleanas y producir un resultado booleano. A continuación se describen los conceptos de cada uno de estos operadores:</p>
                 <ul>
-                  <li><span class="sres"><b>&&</b> (AND lógico):</span> Devuelve true si ambas expresiones son verdaderas, de lo contrario devuelve false.<br>
-                  Ejemplo: true && false devuelve false, mientras que true && true devuelve true.</li><br>
-                  <li><span class="sres"><b>| |</b> (OR lógico):</span> Devuelve true si al menos una de las expresiones es verdadera, de lo contrario devuelve false.<br>
-                  Ejemplo: false | | true devuelve true, mientras que false | | false devuelve false.</li><br>
-                  <li><span class="sres"><b>!</b> (NOT lógico):</span> Devuelve el opuesto booleano de la expresión. Es decir, si la expresión es verdadera, devuelve false, y si la expresión es falsa, devuelve true.<br>
-                  Ejemplo: !true devuelve false, mientras que !false devuelve true.</li>
+                  <li><span class="sres"><b>&&</b> (AND):</span> Devuelve true si ambas expresiones son verdaderas, de lo contrario devuelve false.<br>
+                  <span class="scode">Ejemplo:</span> true && false devuelve false, mientras que true && true devuelve true.</li><br>
+                  <li><span class="sres"><b>| |</b> (OR):</span> Devuelve true si al menos una de las expresiones es verdadera, de lo contrario devuelve false.<br>
+                  <span class="scode">Ejemplo:</span> false | | true devuelve true, mientras que false | | false devuelve false.</li><br>
+                  <li><span class="sres"><b>!</b> (NOT):</span> Devuelve el opuesto booleano de la expresión. Es decir, si la expresión es verdadera, devuelve false, y si la expresión es falsa, devuelve true.<br>
+                  <span class="scode">Ejemplo:</span> !true devuelve false, mientras que !false devuelve true.</li>
                 </ul>
-                <p>Es importante tener en cuenta que estos operadores se evalúan de izquierda a derecha, y que tienen precedencia según la siguiente jerarquía: <span class="scode"><b>!</b></span> tiene la mayor precedencia, seguido de <span class="scode"><b>&&</b></span>, y finalmente <span class="scode"><b>| |</b></span>. Para cambiar el orden de evaluación, se pueden utilizar paréntesis.</p>
+                <p>Es importante tener en cuenta que estos operadores se evalúan de izquierda a derecha, y que tienen precedencia según la siguiente jerarquía: <span class="sres"><b>!</b></span> tiene la mayor precedencia, seguido de <span class="sres"><b>&&</b></span>, y finalmente <span class="sres"><b>| |</b></span>. Para cambiar el orden de evaluación, se pueden utilizar paréntesis.</p>
+                <hr>
               </details>
 
               <details>
@@ -234,14 +241,18 @@
                   <p>En conclusión, Ruby ofrece una variedad de estructuras de control de flujo que permiten a los desarrolladores escribir programas más complejos y poderosos. La mayoría de las estructuras de control de flujo en Ruby tienen una sintaxis clara y fácil de entender.</p>
                   <p>Es importante tener en cuenta que un uso excesivo de estructuras de control de flujo puede dificultar la lectura y el mantenimiento del código. Por lo tanto, es recomendable utilizar estructuras de control de flujo de manera efectiva y en combinación con otras técnicas de programación para escribir código claro y fácil de entender.</p>
                   <p id="condition">Además, Ruby también ofrece varias instrucciones de control de bucles que permiten a los desarrolladores tener un mayor control sobre la ejecución de los bucles y la iteración. La comprensión y el uso efectivo de estas instrucciones son esenciales para escribir código eficiente y funcional.</p>
-                  <hr>
+
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <p><span class="sres"><b>1. if | elsif | else</b></span> es muy común en Ruby para controlar diferentes casos que pueden ocurrir dentro de una estructura condicional.</p>
                 <div class="ptb16">
                   <div class="codigo dg" style="grid-template-columns: 700px;">
                     <img src="/assets/img/ruby/rb1/cf_if_elsif_else.png" alt="if elsif">
                   </div>
                 </div>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+                
                 <p><span class="sres"><b>2. unless</b></span> es una estructura de control de flujo que se utiliza para ejecutar una sección de código solo si una condición no se cumple. En otras palabras, unless es el opuesto de if.</p>
                 <div class="ptb16">
                   <div class="codigo dg" style="grid-template-columns: 230px;">
@@ -250,7 +261,9 @@
                 </div>
                 <p>En este ejemplo, la estructura unless se utiliza para evaluar si la variable edad es menor que 18. Si la edad es menor que 18, se imprime "Eres menor de edad". Si la edad es mayor o igual a 18, se imprime "Eres mayor de edad".</p>
                 <p id="bucles">En resumen, unless es una estructura de control de flujo útil para ejecutar una sección de código solo si una condición no se cumple.</p>
-                <hr>
+
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <p><span class="sres"><b>3. do</b></span> se utiliza para indicar el inicio del bloque de código que se ejecutará para cada elemento de la colección, y end se utiliza para indicar el final del bloque de código. </p>
                 <p>El siguiente es un ejemplo simple de cómo usar do con el método each para iterar sobre una matriz e imprimir cada elemento:</p>
                 <div class="ptb16">
@@ -269,7 +282,9 @@
                   </code>
                 </div>
                 <p>Es importante tener en cuenta que en Ruby, los bloques pueden delimitarse de varias formas diferentes, como do y end o { y }. En general, se recomienda usar <b>do</b> y <b>end</b> para bloques de varias líneas y <b>{ }</b> para bloques de una sola línea.</p>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <p><span class="sres"><b>4. while</b></span> es una estructura de control de flujo útil en Ruby que permite ejecutar un bloque de código repetidamente mientras se cumple una condición específica. Sin embargo, es importante utilizarla con cuidado para evitar ciclos infinitos.</p>
                 <div class="ptb16">
                   <div class="codigo dg" style="grid-template-columns: 750px;">
@@ -278,7 +293,9 @@
                 </div>
                 <p>Mientras la condición sea verdadera, el bloque de código se ejecutará una y otra vez. Cuando la condición se vuelve falsa, el programa saldrá del ciclo y continuará con el resto del código.</p>
                 <p>Es importante tener en cuenta que la condición de while debe actualizarse adecuadamente dentro del bloque de código para evitar que el ciclo se ejecute infinitamente. Si la condición no cambia nunca, el programa se quedará atrapado en un ciclo infinito.</p>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <p><span class="sres"><b>5. until</b></span> es una estructura de control de flujo útil en Ruby que permite ejecutar un bloque de código repetidamente hasta que se cumpla una condición específica. Esta estructura se utiliza principalmente cuando se quiere evaluar una condición en términos negativos.</p>
                 <p>A diferencia de la estructura while, que se ejecuta mientras una condición es verdadera, la estructura until se ejecuta mientras una condición es falsa. Ambas estructuras son similares y se utilizan para controlar el flujo de un programa, pero until se puede utilizar cuando la condición que se quiere evaluar es más natural expresarla en términos negativos.</p>
                 <div class="ptb16">
@@ -286,7 +303,9 @@
                     <img src="/assets/img/ruby/rb1/cf_until.png" alt="until">
                   </div>
                 </div>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <p><span class="sres"><b>6. for</b></span> es una estructura de control de flujo en Ruby que permite iterar sobre una colección de elementos, como un arreglo o un rango de números. Aunque no es tan común como otras estructuras como each y map, sigue siendo una opción válida y útil en algunos casos.</p>
                 <div class="ptb16">
                   <div class="codigo dg" style="grid-template-columns: 600px;">
@@ -294,7 +313,9 @@
                   </div>
                 </div>
                 <p id="structure">Es importante tener en cuenta que en Ruby, es más común utilizar otras estructuras de control de flujo como each y map para iterar sobre colecciones de elementos, ya que son más flexibles y poderosas que la estructura for. Sin embargo, for sigue siendo una opción válida y útil en algunos casos.</p>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <p><span class="sres"><b>7. case | when</b></span> son palabras clave en el lenguaje de programación Ruby que se utilizan para realizar una serie de comprobaciones de igualdad en una expresión dada.</p>
                 <p>Por ejemplo, el siguiente código en Ruby utiliza case y when para determinar si un número es positivo, negativo o cero:</p>
                 <div class="ptb16">
@@ -303,7 +324,9 @@
                   </div>
                 </div>
                 <p>En este ejemplo, el valor de num es -5, lo que significa que la condición en el último when se cumple y se ejecuta la línea puts "El número es negativo".</p>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <p><span class="sres"><b>8. times</b></span> es un método de Ruby que se utiliza para ejecutar un bloque de código un número específico de veces. Se utiliza comúnmente para ejecutar un bloque de código un número fijo de veces, por ejemplo, para imprimir una línea de texto varias veces.</p>
                 <p>La sintaxis básica de .times es la siguiente:</p>
                 <div class="ptb16">
@@ -322,12 +345,13 @@
 <span class="scom">I am learning in codeable!</span></pre>
                   </code>
                 </div>
+                <hr>
               </details>
 
           </details>
           <p class="piepag">Resumen, Datos (Concepto, Tipos), Imprimir (puts y print), Concatenar / Interpolar, Comentar en el código, Operadores Matemáticos, Operadores de comparación, Operadores Lógicos, Control Flow.</p>
 
-          <!-- <details> -->
+          <details>
             <summary class="sub manito">Ruby Basic 2</summary>
 
               <details>
@@ -352,7 +376,9 @@
                     <img src="/assets/img/ruby/rb2/methods.png" alt="metodos">
                   </div>
                 </div>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <h2>Indice de un Array</h2>
                 <p>Cada elemento dentro de un array se identifica mediante un índice numérico que comienza en cero y se incrementa en uno para cada elemento adicional.</p>
                 <p>Podemos acceder a un elemento específico en el array utilizando su índice. El primer elemento del array tiene un índice de 0, el segundo tiene un índice de 1, y así sucesivamente. Por lo tanto, para acceder al primer elemento del array (1), utilizamos el índice 0:</p>
@@ -361,7 +387,9 @@
                     <img src="/assets/img/ruby/rb2/IndiceArray.png" alt="Indice Array">
                   </div>
                 </div>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <h2>Nested Arrays (Arreglo dentro de un arreglo)</h2>
                 <p>Los nested arrays (arrays dentro de arrays) son una estructura de datos que permiten almacenar una colección de elementos, donde uno o más de los elementos son a su vez arrays.</p>
                 <p>En otras palabras, un nested array es un array que contiene otros arrays como elementos. Esto permite representar estructuras de datos más complejas, como matrices, tablas, y listas de listas.</p> 
@@ -370,7 +398,9 @@
                     <img src="/assets/img/ruby/rb2/NestedArray.png" alt="nested array">
                   </div>
                 </div>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <h2>Arrays Operators (Operadores de arreglos)</h2>
                 <p>Los operadores de arrays en Ruby son un conjunto de métodos y símbolos que se utilizan para realizar operaciones comunes en arrays. Estos operadores son una parte importante del lenguaje Ruby, ya que permiten manipular y transformar arrays de manera eficiente y legible.</p>
                 <p>Los operadores de arrays más comunes en Ruby incluyen:</p>
@@ -416,7 +446,9 @@
                     <img src="/assets/img/ruby/rb2/ArrayIndice.png" alt="indice array">
                   </div>
                 </div>
-                <hr>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
                 <h2>Arrays Methods (Metódos en un arreglo)</h2>
                 <p>En Ruby, los arrays tienen una amplia variedad de métodos disponibles para manipularlos y acceder a ellos. Algunos de los métodos más comunes son:</p>
                 <p><span class="sres"><b>at :</b></span> Podemos acceder a un elemento específico de un array mediante su índice. Es equivalente a utilizar el operador [ ].</p>
@@ -481,9 +513,10 @@
                   </div>
                 </div>
                 <p>Estos son solo algunos de los métodos disponibles para los arrays en Ruby. Hay muchos más que puedes explorar en la documentación oficial de Ruby.</p>
+                <hr>
               </details>
 
-              <!-- <details> -->
+              <details>
                 <summary class="subin manito">Hashes</summary>
                 <h2>Concepto</h2>
                 <p>Un hash es una colección de pares <span class="sres">key-value</span>, donde cada <span class="sres">key</span> está asociada a un <span class="sres">value</span> único. Los hashes se definen utilizando llaves <span class="sres">{ }</span> y los pares <span class="sres">key-value</span> se separan por comas.</p>
@@ -495,12 +528,51 @@
                 <p>Las keys pueden ser cualquier objeto de Ruby, pero generalmente se utilizan símbolos o cadenas de texto. Los valores también pueden ser cualquier objeto de Ruby, incluyendo otros hashes.</p>
                 <div class="ptb16">
                   <div class="codigo dg" style="grid-template-columns: 460px;">
-                    <img src="/assets/img/ruby/rb2/hashes.png" alt="hash">
+                    <img src="/assets/img/ruby/rb2/hashes.png" alt="hashes">
                   </div>
                 </div>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
 
+                <h2>Symbol</h2>
+                <p>los símbolos son objetos inmutables que se utilizan como identificadores únicos en el programa. Los símbolos se definen anteponiendo los dos puntos <span class="sres"><b>( : )</b></span> al nombre del símbolo.</p>
+                <div class="pb16">
+                  <code>
+                    <pre class="codigo">
+<span class="scode">:nombre</span>
+<span class="scode">:edad</span></pre>
+                  </code>
+                </div>
+                <p>Los símbolos son útiles porque ocupan menos memoria que las cadenas de texto, y porque son más eficientes para comparar y buscar en el programa.</p>
+                <p>Dentro de un hash el símbolo se utiliza como key y se convierte automáticamente en un símbolo.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 300px;">
+                    <img src="/assets/img/ruby/rb2/hashSymbol.png" alt="hash symbol">
+                  </div>
+                </div>
+                <p>En este caso, nombre: es un símbolo que se utiliza como key en el hash, y "Juan" es el value asociado a la key.</p>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
 
+                <h2>Methods in Hashes</h2>
+                <p>En Ruby, un método es una pieza de código que realiza una tarea específica y se puede llamar en cualquier parte del programa.</p>
+                <p>Algunos ejemplos de metodos:</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 630px;">
+                    <img src="/assets/img/ruby/rb2/hashMethod.png" alt="hash method">
+                  </div>
+                </div>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
 
+                <h2>MAP in Hashes</h2>
+                <p>En Ruby, el método <span class="scode"><b>.map</b></span> se puede utilizar en una hash para transformar los values de un hash, pero no las keys. El método <span class="scode"><b>.map</b></span> devuelve un array con los resultados de la operación realizada en cada valor del hash.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 370px;">
+                    <img src="/assets/img/ruby/rb2/hashMap.png" alt="hash map">
+                  </div>
+                </div>
+                <hr>
               </details>
 
           </details>
@@ -509,7 +581,7 @@
           </p>
 
           <details>
-            <summary class="sub manito">Ruby Basic 3</summary>
+            <summary class="sub manito">Ruby Methods</summary>
 
               <details>
 

@@ -349,6 +349,61 @@ puts hash[:ciudad]      #=> "Buenos Aires"
 
 
 
+#=========== HASH SYMBOL =============
+
+persona = {nombre: "Juan", edad: 25}
+
+
+
+#=========== HASH METHODS =============
+
+hash = {
+  key1: "value1",
+  key2: "value2",
+  key3: "value3"
+}
+
+p hash.keys         #Devuelve un arreglo con las keys del hash
+# [:key1, :key2, :key3]
+
+p hash.values       #Devuelve un arreglo con las values del hash
+# ["value1", "value2", "value3"]
+
+p hash.length       #Cuenta los elementos dentro del hash
+# 3
+
+p hash.size         #Cuenta los elementos dentro del hash
+# 3
+
+# Agregar elementos al final de un arreglo
+puts hash.merge ({nuevakey: "nuevovalue"})
+# {:key1=>"value1", :key2=>"value2", :key3=>"value3", :nuevakey=>"nuevovalue"}
+
+
+
+#=========== HASH MAP =============
+
+hash = {
+  key1: "value1",
+  key2: "value2",
+  key3: "value3"
+}
+
+new_hash = hash.map do |lakey, elvalue|
+  "Interpolamos #{lakey} con #{elvalue} xD."
+end
+
+p new_hash
+
+# ["interpolamos key1 con value1 xD.",
+# "interpolamos key2 con value2 xD.",
+# "interpolamos key3 con value3 xD.",]
+
+
+
+
+
+
 
 
 

@@ -3,6 +3,12 @@
     cursor: pointer;
 }
 
+.chr {
+    padding: 25px 0;
+    display: block;
+    margin: auto;
+}
+
 p {
     padding-bottom: .5rem;
     padding-top: .5rem;

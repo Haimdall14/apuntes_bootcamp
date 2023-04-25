@@ -58,7 +58,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 660px) {
   /* agregar clases exclusivas para viewports de 400x de screen */
 
   .navbar,
