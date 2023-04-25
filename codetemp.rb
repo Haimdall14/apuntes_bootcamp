@@ -401,6 +401,16 @@ p new_hash
 
 
 
+#=========== METHODS =============
+
+# ===== Estructura del metodo =====
+#con def definimos un metodo
+def nombre_del_metodo (parametros)
+  parametros + 2        #operación del metodo
+end
+# Con end cerramos el scope (alcance) del metodo.
+
+
 
 
 
