@@ -252,6 +252,103 @@ a.at(2)               #=> 3
 #=========== FIN ARRAYS AT =============
 
 
+#=========== INICIO ARRAYS PUSH =============
+
+a = [1, 2, 3]
+a.push(4)         #=> [1, 2, 3, 4]
+
+#=========== INICIO ARRAYS PUSH =============
+
+
+#=========== INICIO ARRAYS SHIFT =============
+
+a = [1, 2, 3, 4]
+a.shift       #=> 1
+  puts a      #=> [2, 3, 4]
+
+
+#=========== FIN ARRAYS SHIFT =============
+
+
+#=========== INICIO ARRAYS LENGTH SIZE =============
+
+a = [1, 2, 3, 4, 5]
+a.length      #=> 5
+a.size        #=> 5
+
+#=========== FIN ARRAYS LENGTH SIZE =============
+
+
+#=========== INICIO ARRAYS SORT =============
+
+a = [4, 2, 1, 5, 3]
+a.sort          #=> [1, 2, 3, 4, 5]
+
+#=========== FIN ARRAYS SORT =============
+
+
+#=========== INICIO ARRAYS REVERSE =============
+
+a = [1, 2, 3, 4, 5]
+a.reverse       #=> [5, 4, 3, 2, 1]
+
+#=========== FIN ARRAYS REVERSE =============
+
+
+#=========== ARRAYS COMPACT =============
+
+a = [1, nil, 2, nil, 3]
+a.compact       #=> [1, 2, 3]
+
+
+
+#=========== ARRAYS MAP COLLECT =============
+
+a = [1, 2, 3, 4, 5]
+a.map { |x| x * 2 }
+
+#=> [2, 4, 6, 8, 10]
+
+
+
+#=========== ARRAYS EACH =============
+
+a = [1, 2, 3, 4, 5]
+a.each { |x| puts x }
+
+#=> [1, 2, 3, 4, 5]
+
+
+
+#=========== ARRAYS EACH WITH INDEX =============
+
+a = ['a', 'b', 'c']
+a.each_with_index do |value, index|
+  puts "El valor de #{value} está en el indice #{index}"
+end
+
+# El valor de a está en el índice 0
+# El valor de b está en el índice 1
+# El valor de c está en el índice 2
+
+
+
+#=========== HASH =============
+
+hash = {key1: value1, key2: value2, key3: value3}
+
+
+
+#=========== HASHES =============
+
+hash = {nombre: "Juan", edad: 25, ciudad: "Buenos Aires"}
+
+puts hash[:nombre]      #=> "Juan"
+puts hash[:edad]        #=> 25
+puts hash[:ciudad]      #=> "Buenos Aires"
+
+
+
 
 
 
