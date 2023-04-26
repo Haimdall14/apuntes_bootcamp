@@ -548,7 +548,20 @@ p sum("Lobelto", 1, 2, 3, 4, 5, 6, 7, 8)
 
 
 
+#=========== METHODS DOUBLE SPLAT OPERATOR =============
 
+def say_hello(name, *numbers, **context)
+  p name
+  p numbers
+  p context
+end
+
+say_hello("Lobelto", 1, 2, 3, 4, is_angry: true, time: "evening")
+
+# Al llamar al metodo imprimirá:
+# "Lobelto"
+# [1, 2, 3, 4]
+# {:is_angry=>true, :time=>"evening"}
 
 
 
