@@ -411,6 +411,79 @@ nombre_de_metodo(argumento_para_parametro)
 
 
 
+#=========== METHODS EJEMPLOS =============
+
+def greeting(name)
+  if name.empty?
+    "Nadie a quién saludar. :cry:"
+  else
+    "Hola #{name}! Bienvenido al módulo Ruby."     
+  end
+end
+
+# Tu programa:
+puts "¿Cual es tu nombre?"
+name = gets.chomp.strip
+puts greeting(name)
+
+
+#=============================
+
+
+def recommendation(bmi)
+  if bmi < 18.5
+    "Tienes bajo peso, echa más papa al caldo"
+  elsif bmi < 25
+    "Tienes un peso normal, te tengo envidia sana."
+  else
+    "Tienes sobrepeso, lo sé, la pandemia nos ha afectado a todos."
+  end
+end
+
+def get_float(message)
+  puts message
+  gets.chomp.to_f
+end
+
+# Tu programa:
+weight = get_float("¿Cuánto pesas? (no mientas)")
+height = get_float("¿Cuánto mide? (descalzo)")
+bmi = weight / height**2
+puts "En este momento su IMC es #{bmi.round(2)}"
+puts recommendation(bmi)
+
+
+#=============================
+
+
+def get_positive(message)
+  number = 0
+
+  until number.positive?
+    print message
+    number = gets.chomp.to_i
+  end
+
+  number
+end
+
+def get_multiples(count, base)
+  (1..count).to_a.map { |n| base * n }
+end
+
+def format_multiples(list)
+  list[0..-2].join(", ") + ", and #{list.last}"
+end
+
+# Tu programa:
+puts "Mi nombre es Multiplicador y te daré los primeros 20 múltiplos de cualquier número"
+number = get_positive("Elija un número mayor que 0: ")
+multiples = get_multiples(20, number)
+puts "Los primeros 20 múltiplos de #{number} son:"
+puts format_multiples(multiples)
+
+
+
 #=========== METHODS RETURN EXPLICIT / IMPLICIT =============
 
 def suma(a, b)

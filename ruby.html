@@ -86,7 +86,7 @@
                 <p>En Ruby, existen varios tipos de datos, algunos de ellos son:</p>
                 <ol>
                   <li><span class="sres">Números enteros (Integer):</span> se pueden representar como valores positivos o negativos sin fracciones.<br>Ejemplo: 1, 2, 3, -1, -2, -3, etc.</li><br>
-                  <li><span class="sres">Números de coma flotante (Float):</span> representan números reales con decimales.<br>Ejemplo: 1.23, 2.45, 3.14159, etc.</li><br>
+                  <li><span class="sres">Números flotantes (Float):</span> representan números reales con decimales.<br>Ejemplo: 1.23, 2.45, 3.14159, etc.</li><br>
                   <li><span class="sres">Cadenas de texto (String):</span> una cadena de caracteres que se utiliza para representar texto.<br>Ejemplo: "Hola", "Mundo", "¡Hola, Mundo!", etc.</li><br>
                   <li><span class="sres">Booleanos (Boolean):</span> un valor booleano puede ser verdadero (true) o falso (false).<br>Ejemplo: true, false.</li><br>
                   <li><span class="sres">Arreglos (Array):</span> un arreglo es una colección ordenada de elementos, que pueden ser de cualquier tipo.<br>Ejemplo: [1, 2, 3], ["hola", "mundo"], etc.</li><br>
@@ -584,7 +584,7 @@
             <summary class="sub manito">Ruby Methods</summary>
 
               <details>
-                <summary class="subin manito">Concepto</summary>
+                <summary class="subin manito">Concepto y Ejemplos</summary>
                 <p>En Ruby, un método es una pieza de código que se puede llamar o invocar para realizar una tarea específica. Los métodos son definidos dentro de clases o módulos, y pueden ser públicos, privados o protegidos, lo que afecta su visibilidad y accesibilidad.</p>
                 <p>Para definir un método en Ruby, se utiliza la palabra clave def seguida del nombre del método y sus argumentos entre paréntesis (si los tiene). Luego, el cuerpo del método se escribe entre las palabras clave def y end.</p>
                 <div class="ptb16">
@@ -602,6 +602,29 @@
                     <img src="/assets/img/ruby/rmethods/MethodInvoque.png" alt="Invoque Methods">
                   </div>
                 </div>
+                
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+
+                <h2>Ejemplos</h2>
+                <p><span class="scoder"><b>Di hola:</b></span> Crear el método "greeting" lo hace más legible, ¿verdad?</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 380px;">
+                    <img src="/assets/img/ruby/rmethods/MethodExampHola.png" alt="Ejemplo Hola">
+                  </div>
+                </div><br>
+                <p><span class="scoder"><b>Calculadora de IMC:</b></span> podemos reutilizar "get_float" para obtener el peso y la altura del usuario. Y "recommendation" hace que el código sea más legible.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 550px;">
+                    <img src="/assets/img/ruby/rmethods/MethodExampBMI.png" alt="Ejemplo bmi">
+                  </div>
+                </div><br>
+                <p><span class="scoder"><b>Multiplicador:</b></span> "get_positive", "get_multiples" y "format_multiples" dan al código una mejor estructura. Si queremos cambiar la forma en que se imprimen los múltiplos, simplemente podemos modificar "format_multiple". Con "get_multiples" podemos generar tantos múltiplos como queramos, no solo 20.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 710px;">
+                    <img src="/assets/img/ruby/rmethods/MethodExampMultiply.png" alt="Ejemplo Multiplicador">
+                  </div>
+                </div>
+                <p>El uso de métodos nos permite cortar nuestro código en pequeños pedazos, haciéndolo más legible, comprobable y mantenible.</p>
                 <hr>
               </details>
 
