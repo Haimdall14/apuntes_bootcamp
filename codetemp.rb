@@ -565,6 +565,44 @@ say_hello("Lobelto", 1, 2, 3, 4, is_angry: true, time: "evening")
 
 
 
+#=========== BLOCKS =============
+
+#Usando do end
+[1, 2, 3].each do |number|
+   puts number
+end
+  
+#Usando { }
+[1, 2, 3].each { |number| puts number }
+
+
+
+#=========== BLOCKS METODO ENCADENABLE =============
+
+#   index [0, 1, 2, 3, 4]  <= Posición de índice
+numbers = [1, 2, 3, 4, 5].collect.with_index do |number, index|
+  "index #{index} => number: #{number}"
+end
+
+p numbers
+
+#Imprimirá
+# ["index 0 => number: 1",
+# "index 1 => number: 2",
+# "index 2 => number: 3",
+# "index 3 => number: 4",
+# "index 4 => number: 5"]
+ 
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -734,8 +734,44 @@
           <!-- <details> -->
             <summary class="sub manito">Ruby Blocks</summary>
               
-              <!-- <details> -->
-                <summary class="subin manito">hola</summary>
+              <details>
+                <summary class="subin manito">Bloques</summary>
+                <h2>Concepto</h2>
+                <p>Un bloque en Ruby es un fragmento de código que se puede asociar a la llamada a un método. Se define como un conjunto de instrucciones encerradas entre las palabras clave <span class="scode"><b>do</b></span> y <span class="scode"><b>end</b></span> o entre llaves <span class="scode"><b>{ }</b></span>.</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 330px;">
+                    <img src="/assets/img/ruby/blocks/Bloque.png" alt="block concept">
+                  </div>
+                </div>
+                <ol>
+                  <li><span class="scode"><b>do end</b></span> es más adecuado para bloques que abarcan <span class="scoder">"varias líneas"</span> de código, ya que su formato puede ser más fácil de leer y seguir en bloques más largos.</li>
+                  <li><span class="scode"><b>{ }</b></span> es más adecuado para bloques que abarcan <span class="scoder">"una sola línea"</span> de código, ya que su formato más compacto puede ayudar a mantener el código más legible.</li>
+                </ol>
+
+                <img class="chr" src="/assets/img/hr.png" alt="hr">
+                
+                <h2>Método Encadenable</h2>
+                <p>Ruby nos permite encadenar varios métodos juntos en una sola línea de código.</p>
+                <p>Por ejemplo, el método <span class="scode">.collect</span> en Ruby devuelve un arreglo, lo que significa que se puede encadenar con otros métodos que operen en arreglos, como <span class="scode">.with_index</span> por ejemplo:</p>
+                <div class="ptb16">
+                  <div class="codigo dg" style="grid-template-columns: 500px;">
+                    <img src="/assets/img/ruby/blocks/BMetodEncaden.png" alt="metodo encadenable">
+                  </div>
+                </div>
+                <p>Este código toma el array numbers, <span class="scode">.collect</span> itera con cada elemento del array y <span class="scode">.with_index</span> añade su índice a cada elemento (número), luego crea un nuevo arreglo con una cadena de texto por cada número (number) que contiene tanto su índice (index) como su valor.</p>
+                <hr>
+
+
+
+
+              </details>
+
+              <details>
+                <summary class="subin manito">Yield Keyword</summary>
+
+
+
+
 
               </details>
               
@@ -744,6 +780,7 @@
 
 
           </details>
+          <p class="piepag">Bloques: Concepto, Método Encadenable, </p>
 
           <details>
             <summary class="sub manito">Ruby Classes</summary>
