@@ -548,6 +548,7 @@ p sum("Lobelto", 1, 2, 3, 4, 5, 6, 7, 8)
 
 
 
+
 #=========== METHODS DOUBLE SPLAT OPERATOR =============
 
 def say_hello(name, *numbers, **context)
@@ -565,6 +566,7 @@ say_hello("Lobelto", 1, 2, 3, 4, is_angry: true, time: "evening")
 
 
 
+
 #=========== BLOCKS =============
 
 #Usando do end
@@ -574,6 +576,7 @@ end
   
 #Usando { }
 [1, 2, 3].each { |number| puts number }
+
 
 
 
@@ -659,3 +662,49 @@ nombre_metodo("Saturnino") { |segundo_parametro| puts "Hola #{segundo_parametro}
 # Hola argumento_bloque
 # ☝ Se ejecutó código bloque
 # Hola Lobelto
+
+
+#====================
+
+
+#Definimos el método
+def calcular_area(figura, *args) #usamos * (splat operator) 
+  result = yield(*args)
+  "El area de #{figura} es #{result}"
+end
+
+# Invocamos 3 veces al metodo para consultar por diferentes figuras
+puts calcular_area("Cuadrado", 4) { |lados| lados ** 2 } # ** elevamos a la potencia 2
+puts calcular_area("Triangulo", 5,5) { |base, altura| (base * altura) / 2.0 } # .float
+puts calcular_area("Rectangulo", 5,5) { |base, altura| (base * altura) }
+
+
+# Se imprimirá
+# El area de Cuadrado es 16
+# El area de Triangulo es 12.5
+# El area de Rectangulo es 25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
