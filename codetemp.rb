@@ -592,23 +592,70 @@ p numbers
 # "index 2 => number: 3",
 # "index 3 => number: 4",
 # "index 4 => number: 5"]
- 
 
 
 
 
+#=========== YIELD =============
+
+#Definimos el método
+def block_test
+  puts "String 1"
+  p yield     #=> llamamos al bloque de código
+  puts "string 2"
+  yield       #=> llamamos al bloque de código
+end
+
+# llamamos al metodo (con su bloque de código)
+block_test do 
+  name = "Lobelto"
+  puts "string de yield #{name}"
+  name
+end
+
+# Se imprime en consola:
+
+# String 1
+# string de yield Lobelto
+# "Lobelto"
+# string 2
+# string de yield Lobelto
 
 
+#====================
 
 
+#Definimos el método
+def nombre_metodo(parametro_metodo) #Parametro recibe Argumento de la invocación.
+  puts "Hola #{parametro_metodo}"
+  puts '☝ Interpolamos "hola" con argumento_parametro'
+  yield("argumento_bloque") #aqui pasamos Argumento al parametro del bloque
+  puts "☝ Se ejecutó código bloque"
+  yield("Lobelto") #aqui pasamos Argumento al parametro del bloque
+end
 
+# Invocamos al metodo (con su bloque de código)
+puts "========= 1era invocacion ========="
+#parametro_bloque recibe el argumento_bloque que viene de Yield
+nombre_metodo("argumento_parametro") do |parametro_bloque|
+  puts "Esto es el bloque #{parametro_bloque}"
+end
 
+# Invocamos 2da vez metodo (con su bloque de código)
+puts "========= 2da invocacion ========="
+#segundo_parametro recibe el argumento_bloque que viene de Yield
+nombre_metodo("Saturnino") { |segundo_parametro| puts "Hola #{segundo_parametro}" }
 
-
-
-
-
-
-
-
-
+# Se imprimirá
+# ========= 1era invocacion =========
+# Hola argumento_parametro
+# ☝ Interpolamos "hola" con argumento_parametro
+# Esto es el bloque argumento_bloque
+# ☝ Se ejecutó código bloque
+# Esto es el bloque Lobelto
+# ========= 2da invocacion =========
+# Hola Saturnino
+# ☝ Interpolamos "hola" con argumento_parametro
+# Hola argumento_bloque
+# ☝ Se ejecutó código bloque
+# Hola Lobelto
