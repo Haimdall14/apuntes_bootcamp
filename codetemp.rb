@@ -598,7 +598,6 @@ p numbers
 
 
 
-
 #=========== YIELD =============
 
 #Definimos el método
@@ -686,18 +685,29 @@ puts calcular_area("Rectangulo", 5,5) { |base, altura| (base * altura) }
 
 
 
+#=========== PROCS =============
+
+cube = Proc.new { |x| x ** 3 }
+# Se crea un objeto Proc llamado "cube" que eleva un número al cubo.
+
+n_cubes = [4, 5, 6].map(&cube)
+# Se crea un array con los números 4, 5 y 6
+# .map aplica el objeto Proc "cube" a cada elemento del array.
+# & convierte el objeto Proc en un bloque y pasa como argumento al método .map
+
+p n_cubes 
+# Se imprime el resultado del arreglo con los números elevados al cubo.
+# [64, 125, 216]
 
 
 
+def greeter(name)
+  yield(name)
+end
 
+phrase = Proc.new { |name| puts "Hola #{name}" }
 
-
-
-
-
-
-
-
+greeter("Paulo", &phrase)
 
 
 
