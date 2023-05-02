@@ -69,10 +69,10 @@
                 <p>Para hacer consultas (preguntas) a una base de datos, utilizamos el lenguaje SQL (Structured Query Language). SQL nos permite hacer consultas y recuperar información de la base de datos de manera precisa y eficiente.</p>
                 <p>Existen diferentes tipos de consultas que se pueden realizar utilizando SQL, pero algunas de las más comunes son:</p>
                 <ul>
-                  <li><span class="scode">SELECT:</span> esta consulta se utiliza para recuperar información de una o varias tablas en la base de datos. Se especifica qué columnas se quieren recuperar y de qué tablas, y se pueden agregar condiciones para filtrar los resultados.</li>
-                  <li><span class="scode">UPDATE:</span> esta consulta se utiliza para actualizar información existente en una tabla. Se especifica qué columna(s) se quiere(n) actualizar y a qué valor(es).</li>
-                  <li><span class="scode">INSERT:</span> esta consulta se utiliza para agregar nueva información a una tabla. Se especifica qué valores se quieren agregar a cada columna de la tabla.</li>
-                  <li><span class="scode">DELETE:</span> esta consulta se utiliza para eliminar información de una tabla. Se especifica qué filas se quieren eliminar, utilizando condiciones para filtrar los resultados.</li>
+                  <li><span class="scode">SELECT:</span> Recupera información de una o varias tablas en la base de datos. Se especifica qué columnas se quieren recuperar y de qué tablas, y se pueden agregar condiciones para filtrar los resultados.</li>
+                  <li><span class="scode">UPDATE:</span> Actualiza información existente en una tabla. Se especifica qué columna(s) se quiere(n) actualizar y a qué valor(es).</li>
+                  <li><span class="scode">INSERT:</span> Agrega nueva información a una tabla. Se especifica qué valores se quieren agregar a cada columna de la tabla.</li>
+                  <li><span class="scode">DELETE:</span> Elimina información de una tabla. Se especifica qué filas se quieren eliminar, utilizando condiciones para filtrar los resultados.</li>
                 </ul>
                 <p>Para realizar consultas con SQL, necesitamos utilizar un software o herramienta que nos permita conectarnos a la base de datos y ejecutar comandos SQL. Algunos ejemplos de estas herramientas son MySQL Workbench, Microsoft SQL Server Management Studio, Oracle SQL Developer, entre otros.</p>
               </details>
@@ -89,12 +89,11 @@
                   <li>Realizar pruebas: finalmente, es importante realizar pruebas exhaustivas de la base de datos para asegurarse de que funciona correctamente y cumple con los requerimientos definidos.</li>
                 </ul>
                 <p>Con estos pasos, podemos construir una base de datos y llenarla con datos de manera eficiente y precisa.</p>
-                <hr>
               </details>
-
+              <hr>
           </details>
 
-          <!-- <details> -->
+          <details>
             <summary class="sub manito">Información recomendada para iniciar</summary>
             <h2>Conociendo Bases de Datos (BD)</h2>
             <div class="vid">
@@ -102,8 +101,113 @@
             </div>
             <h2>Diagramas de Relación-Entidad (ERD)</h2>
             <div class="vid">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/mfyqXx70_Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="yes"></iframe><br>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/mfyqXx70_Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="yes"></iframe>
             </div>
+            <hr>
+          </details>
+
+          <details>
+            <summary class="sub manito">PostgreSQL (Instalación)</summary>
+            <p>PostgreSQL es un sistema de gestión de bases de datos relacionales (RDBMS) de código abierto. Ofrece una amplia gama de características y funcionalidades para la gestión de datos, y es conocido por su escalabilidad, estabilidad y seguridad.</p>
+            <p>Es una buena opción para aquellos que necesitan una base de datos confiable, escalable y con características avanzadas.</p>
+            <h2>Intalación</h2>
+            <p>Si tuvieras alguna consulta o dificultad con la instalación, puedes consultar la <a href="https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/" target="_blank">Documentación Oficial</a>.</p>
+            <p>Debemos ingresar la siguiente secuencias de comandos en Terminal.</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scom"># Abrimos terminal WSL y escribiremos:</span>
+
+<span class="scode">sudo apt update</span> <span class="scom"># Actualiza la lista de versiones de paquetes.</span>
+<span class="scode">sudo apt upgrade</span> <span class="scom"># Actualiza nuestro repositorio de paquetes.</span>
+
+<span class="scode">sudo apt install postgresql postgresql-contrib</span>
+<span class="scom"># Se instalarán 2 paquetes necesarios.</span>
+
+<span class="scode">sudo -u postgres createuser --interactive</span>
+<span class="scom"># Ingresar la contraseña de instalación de WSL.</span>
+<span class="scom"># Rol de Superuser? (y/n): ingresar Y (si).</span></pre>
+              </code>
+            </div>
+            <h2>Comprobamos</h2>
+            <p>Para verificar que la instalación fue satisfactoria, realizamos los siguientes tests:</p>
+            <div class="pb16">
+              <code>
+                <pre class="codigo">
+<span class="scode">psql --version</span>
+<span class="scom"># Muestra la versión actual instalada en el equipo.</span>
+
+<span class="scode">sudo service postgresql start</span>
+<span class="scom"># Inicia el servicio de PostgreSQL.</span>
+
+<span class="scode">sudo -u postgres psql</span>
+<span class="scom"># inicia sesión PostgreSQL como usuario "postgres" con permisos de superusuario.</span>
+
+<span class="scom"># El Prompt cambiará a:</span>
+<span class="scode">postgres=#</span>
+<span class="scom"># Significa que conseguimos conectarnos a la base de datos exitosamente.</span></pre>
+              </code>
+            </div>
+            <h2>Opcional</h2>
+            <p>Por otro lado podemos optar por usar una interfaz gráfica para interactuar con postgreSQL, como la que veremos a continuacón:</p>
+            <div class="vid">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/DjsDQAZYE30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="yes"></iframe>
+            </div>
+            <hr>
+          </details>
+
+          <details>
+            <summary class="sub manito">Ejercicios Introductorios (recomendado)</summary>
+            <p>Comandos básicos para iniciar:</p>
+            <ul>
+              <li>Recuperar datos con <span class="scode">'SELECT' - 'FROM'</span> cláusula.</li>
+              <li>Agregue restricciones con <span class="scode">'WHERE'</span> cláusulas y operadores SQL (<span class="scode">'=', '!=', 'LIKE', 'NOT LIKE', '%', '_', 'IN', 'NOT IN'</span>).</li>
+              <li>Ordenar los resultados con <span class="scode">'ORDER BY'</span>.</li>
+              <li>Filtrar datos usando <span class="scode">'DISTINCT'</span>.</li>
+              <li>Limita el número de filas para mostrar con <span class="scode">'LIMIT'</span> y <span class="scode">'OFFSET'</span>.</li>
+              <li>Crear salidas personalizadas con <span class="scode">'CASE'</span> cláusula.</li>
+            </ul>
+            <p>Ejercicios Recomendados para familiarizarse con SQL :</p>
+            <p><a href="https://sqlbolt.com/" target="_blank">SQLBolt</a> Aquí encontrarás 18 Lessons con sus respectivos Ejercicios.</p>
+            <p><a href="https://pgexercises.com/questions/basic/" target="_blank">PostgreSQL</a> 12 Ejercicios un poco mas avanzados (Recomendado).</p>
+
+
+
+
+          </details>          
+
+          <details>
+            <summary class="sub manito">Comandos mas comunes en SQL</summary>
+            <p>A continuación una pequeña relación de comandos usados frecuentemente, no está de mas  buscar <a href="https://doc.4d.com/4Dv19/4D/19/Comandos-SQL.200-5434410.es.html" target="_blank">Documentación</a> en la web.</p>
+            <ul>
+              <li><span class="scode">SELECT :</span> Recupera datos de una o más tablas.</li>
+              <li><span class="scode">INSERT :</span> Añade datos a una tabla existente.</li>
+              <li><span class="scode">UPDATE :</span> Modifica los datos contenidos en una tabla.</li>
+              <li><span class="scode">DELETE :</span> Suprime todo o una parte de los datos de la tabla.</li>
+              <li><span class="scode">CREATE DATABASE :</span> Crea una nueva base de datos externa (archivos db .4db y .4dd) en una ubicación específica.</li>
+              <li><span class="scode">USE DATABASE :</span> Designa una base externa como base de datos actual, en otras palabras, la base a la cual se dirigirán las próximas consultas SQL en el proceso actual.<br>Todos los tipos de consultas SQL concernientes: consultas incluidas en la estructura Begin SQL/End SQL, comandos SQL EXECUTE o EXECUTE SCRIPT, etc.</li>
+              <li><span class="scode">ALTER DATABASE :</span> Activa o deshabilita las opciones SQL de la base actual para la sesión actual; Es decir para todos los usuarios y procesos hasta que la base se reinicie.<br>Este comando está diseñado para permitirle deshabilitar temporalmente las opciones SQL con el fin de acelerar ciertas operaciones que consumen una gran cantidad de recursos, por ejemplo: desactivar los índices y las restricciones antes de comenzar la importación de una gran cantidad de datos puede reducir significativamente la duración de la importación.<br>Tenga en cuenta que las restricciones incluyen las llaves primarias y las llaves foráneas, así como los atributos de unicidad y de nulidad.<br>Si prefiere gestionar los triggers individualmente para cada tabla, debe utilizar ALTER TABLE.</li>
+              <li><span class="scode">CREATE TABLE :</span> Utiliza para crear una tabla.</li>
+              <li><span class="scode">DROP INDEX :</span> Elimina la base el índice existente. No puede utilizarse con los índices creados por las restricciones PRIMARY KEY o UNIQUE.</li>
+              <li><span class="scode">LOCK TABLE :</span> permite bloquear la tabla nom_sql en el modo EXCLUSIVE o SHARE.<br>En el modo EXCLUSIVE, los datos de la tabla no pueden leerse o modificarse por otra transacción.<br>En el modo SHARE, los datos de la tabla pueden ser leídos por otras transacciones pero las modificaciones siguen siendo prohibidas.</li>
+              <li><span class="scode">UNLOCK TABLE :</span> Desbloquea la tabla previamente bloqueada vía el comando LOCK TABLE. Este comando no funciona si se pasa dentro de una transacción o si se utiliza en una tabla que bloqueada por otro proceso.</li>
+              <li><span class="scode">EXECUTE IMMEDIATE :</span> Ejecuta una expresión SQL dinámica. Representa una variable que contiene un conjunto de instrucciones SQL que se ejecutarán como un todo.</li>
+              <li><span class="scode">CREATE SCHEMA :</span> Crea un nuevo esquema SQL en la base de datos. Puede utilizar todo nom_sql excepto por "DEFAULT_SCHEMA" y "SYSTEM_SCHEMA".</li>
+              <li><span class="scode">ALTER SCHEMA :</span> Renombra el esquema SQL nom_sql (primer parámetro) por nom_sql (segundo parámetro).<br>Sólo el Diseñador y el Administrador pueden modificar esquemas.</li>
+              <li><span class="scode">DROP SCHEMA :</span> Elimina el esquema designado.<br>Es posible borrar cualquier esquema, excepto el esquema por defecto (DEFAULT_SCHEMA) y el esquema que contiene las tablas sistema ("SYSTEM_SCHEMA"). Cuando se elimina un esquema, todas las tablas que le fueron asignadas se transfieren al esquema por defecto. Las tablas transferidas heredan los derechos de acceso del esquema por defecto.<br>Si intenta eliminar un esquema que no existe o que ya se ha eliminado, se genera un error.
+                </li>
+              <li><span class="scode">CREATE VIEW :</span> Permite crear una vista SQL (estándar) que contiene las columnas definidas en el parámetro lista_columnas. Es necesario especificar un nombre de columna si esta columna es una función o se deriva de una operación aritmética (escalar). También es necesario especificar un nombre de columna cuando se quiere evitar tener distintas columnas con el mismo nombre (por ejemplo, durante una operación JOIN) o cuando desea utilizar un nombre de columna diferente del que se deriva.</li>
+              <li><span class="scode">DROP VIEW :</span> Borra de la base la vista llamada nom_vista.<br>Cuando se pasa la restricción IF EXISTS, el comando no hace nada y no se genera ningún error si la vista nom_vista no existe en la base.</li>
+              <li><span class="scode">REVOKE :</span>  Borra los derechos de acceso específicos asociados al esquema definido por el parámetro nom_sql.<br>Cuando ejecuta este comando, asigna el pseudo-grupo de usuarios (Persona) al derecho de acceso definido.</li>
+              <li><span class="scode">REPLICATE :</span> Replica los datos de una tabla de una base A en la de una tabla de una base B. Por convención, la base donde se ejecuta el comando se llama "base local" y la base de la cual los datos se replican se llama "base remota".<br>Este comando sólo puede utilizarse en el marco de un sistema de replicación de base. Para que el sistema funcione, la replicación debe haber sido activada en la base local y en la base remota y cada tabla implicada deberá tener una llave primaria.</li>
+              <li><span class="scode">SYNCHRONIZE :</span> Sincroniza dos tablas ubicadas en dos servidores 4D SQL diferentes. Todo cambio realizado en una de las tablas también se efectúa en el otro. El servidor 4D SQL que ejecuta el comando se llama servidor local y el otro servidor se llama servidor remoto.<br>El comando SYNCHRONIZE es una combinación de dos llamadas internas al comando REPLICATE. La primera llamada replica los datos desde el servidor remoto al servidor local y la segunda efectúa la operación inversa: replicación de los datos del servidor local al servidor remoto. Las tablas a sincronizar deben estar configuradas para la replicación</li>              
+            </ul>
+            <hr>
+          </details>
+
+          <details>
+            <summary class="sub manito"></summary>
+
 
 
 
